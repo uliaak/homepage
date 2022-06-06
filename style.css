@@ -1,0 +1,323 @@
+@font-face {
+    font-family: "Helvetica Neue Cyr" ;
+    src: url('../fonts/helveticaneuecyr/helveticaneuecyr-heavy.ttf') format('truetype');
+    font-weight: 800;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background-color: #ffffff;
+}
+
+
+
+ .cv-container {
+    max-width: 1200px;
+    width: 100%; /*растягивается на 100%*/
+    margin: 0 auto; /*отцентрировали*/
+ }
+
+ main {
+    display: flex;
+ }
+
+
+
+ .cv-left {
+    padding: 0px 17px 0px 20px;
+    flex-basis: 453px;
+    border-right: 3px solid #eac428;
+ }
+ .cv-left__img {
+    width: 100%;
+ }
+
+ .greeting-block {
+    position: relative;
+ }
+ .cv-greeting-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 85%;
+ }
+ .cv-greeting {
+    position: relative;
+    height: 250px;
+    margin-left: 54px;
+ }
+ .yellow-block {
+    background-color: #eac428;
+    width: 43px;
+    height: inherit;
+    position: absolute;
+ }
+ .greeting-text {
+    position: relative;
+    height: inherit;
+    margin: 0px;
+ }
+ .greeting-text span {
+    position: absolute;
+    font-size: 56px;
+    color: #231f20;
+    font-weight: 800;
+    font-family: "Helvetica Neue Cyr";
+    letter-spacing: -0.5px;
+ }
+ .greeting-text > span:first-child {
+    width: 176px;
+    top: 23%;
+    left: 10px;
+ }
+ .greeting-text > span:last-child {
+    right: 0;
+    bottom: 0;
+    left: 35%;
+    width: 230px;
+    color: #eac428;
+ }
+
+.contacts{
+    margin: 235px auto 0 auto;
+    background-color:#eac428;
+    padding: 30px;
+    width: 380px;
+}
+.contacts-title {
+    font-size: 29px;
+    letter-spacing: 3px;
+    color: #231f20;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+.contacts-description {
+    font-size: 24px;
+    line-height: 38px;
+    color: #231f20;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+.contacts-title.email {
+    margin-top: 27px;
+}
+
+.skills {
+    padding: 30px;
+}
+.skills-range {
+    width: 135px;
+    height: 15px;
+    background-color: #eac428;
+}
+.skills-element {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+    font-size: 20px;
+    color: #231f20;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+.range-value.one {
+    background-color: #231f20;
+    height: inherit;
+    width: 47%;
+}
+.range-value.two {
+    background-color: #231f20;
+    height: inherit;
+    width: 85%;
+}
+.range-value.three {
+    background-color: #231f20;
+    height: inherit;
+    width: 80%;
+}
+.range-value.four {
+    background-color: #231f20;
+    height: inherit;
+    width: 75%;
+}
+.range-value.five {
+    background-color: #231f20;
+    height: inherit;
+    width: 25%;
+}
+
+
+.languages {
+    padding: 30px;
+}
+.languages-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 42 20px 0;
+}
+.languages-element {
+    height: 95px;
+    width: 95px;
+    background-color:#eac428 ;
+    margin: 0 30px;
+    transform: rotate(45deg);
+}
+.languages-element span {
+    display: flex;
+    justify-content: center;
+    transform: rotate(-45deg);
+    margin-top: 36px;
+    font-size: 20px;
+    color: #231f20;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+
+
+
+ .cv-right {
+    flex-grow: 1; 
+    position: relative; 
+ }
+ .cv-right .yellow-block {
+    top: 0;
+    right: 0;
+    height: 222px;
+ }
+
+
+
+ .profile-title {
+    font-size: 29px;
+    letter-spacing: 3px;
+    color: #231f20;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+ }
+ .profile-content {
+    margin-top: 28px;
+    height: 259px;
+    font-size: 20px;
+    line-height: 33px;
+    color: #231f20;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: left;
+    padding: 0 34px;
+ }
+ .profile-title__right {
+    width: fit-content;
+    border-bottom: 3px solid #eac428;
+    margin-top: 87px;
+    padding: 0 34px;
+ }
+
+
+.education-title {
+    font-size: 29px;
+    letter-spacing: 3px;
+    color: #231f20;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+.education-title__right {
+    width: fit-content;
+    border-bottom: 3px solid #eac428;
+    margin-top: 109px;
+    padding: 0 34px;
+}
+.education-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0 33px;
+}
+.education-content-title
+{
+    font-size: 20px;
+    color: #231f20;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+.education-description {
+    font-size: 20px;
+    line-height: 33px;
+    color: #231f20;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: left;
+    margin-top: 20px;
+}
+.education-year {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 97px 0px 33px;
+}
+.year {
+    font-size: 20px;
+    line-height: 33px;
+    color: #231f20;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: left;
+}
+
+
+
+.soft-skills-title {
+    font-size: 29px;
+    letter-spacing: 3px;
+    color: #231f20;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+.soft-skills-title__right {
+    width: fit-content;
+    border-bottom: 3px solid #eac428;
+    margin-top: 109px;
+    padding: 0 34px;
+}
+.soft-skills-content {
+    margin: 50px 0 0 33px;
+}
+.content {
+    height: 62px;
+    font-size: 20px;
+    line-height: 33px;
+    color: #231f20;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: left;
+    margin-top: 40px;
+}
+
+
+.footer-link {
+    font-size: 22px;
+    letter-spacing: 18px;
+    line-height: 41px;
+    color: #231f20;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 20px;
+}
+a {
+    text-decoration: none;
+}
+.footer-link a {
+    color: #231f20;
+}
+.footer {
+    background-color: #eac428;
+}
